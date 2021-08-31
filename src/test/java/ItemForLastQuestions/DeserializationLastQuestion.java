@@ -13,5 +13,6 @@ public class DeserializationLastQuestion {
                 .when()
                 .get("http://jsonplaceholder.typicode.com/users");
 
+        ResponseItem[] responseItems = response.as(ResponseItem[].class);
     }
 }
